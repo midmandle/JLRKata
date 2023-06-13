@@ -6,10 +6,4 @@ public interface CarConfigurator {
     String summarize();
 
     CarModel selectModel(String model);
-
-    int createNewConfig(CarConfigUser user);
-
-    CarConfigurator selectConfig(int configId);
-
-    CarConfiguration getById(int configId);
 }

@@ -41,17 +41,17 @@ public class CarConfiguratorAcceptance {
     void a_user_makes_a_car_and_summarizes_it() {
         String expected = "Land Rover Sport V8 4.0l Red";
 
-        CarConfigurator configurator = new LandRoverConfigurator();
+        CarConfigurationService configurationService = new CarConfigurationService();
 
         CarConfigUser user = new CarConfigUser();
-        int configId = configurator.createNewConfig(user);
+        int configId = configurationService.createNewConfig(user);
 
-        configurator.selectConfig(configId)
+        configurationService.selectConfig(configId)
                 .selectModel(LandRoverModelList.SPORT.toString())
                 .selectEngine(LandRoverEngineList.V8_4L.toString())
                 .selectColour(JLRColours.BLUE.toString());
 
-        CarConfiguration configuration = configurator.getById(configId);
+        CarConfiguration configuration = configurationService.getById(configId);
         String actual = configuration.summarize();
         assertEquals(expected, actual);
     }
