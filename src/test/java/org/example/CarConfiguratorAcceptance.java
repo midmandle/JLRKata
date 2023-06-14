@@ -39,17 +39,18 @@ public class CarConfiguratorAcceptance {
         String expected = "Land Rover Sport V8 4.0l Red";
         var carBrand = JLRBrand.LAND_ROVER;
         var carConfigRepository = new InMemoryConfigurationRepository();
-        CarConfigurationService configurationService = new CarConfigurationService(carConfigRepository);
-        CarConfigUser user = new CarConfigUser("bob", "bob@example.com");
-        String configId = configurationService.createNewConfig(user, carBrand);
+        var idGenerator = new UuidIdGenerator();
+        var configurationService = new CarConfigurationService(carConfigRepository, idGenerator);
+        var user = new CarConfigUser("bob", "bob@example.com");
+        var configId = configurationService.createNewConfig(user, carBrand);
 
-        configurationService.selectConfig(configId)
+        configurationService.useConfig(configId)
                 .selectModel(LandRoverModelList.SPORT.toString())
                 .selectEngine(LandRoverEngineList.V8_4L.toString())
                 .selectColour(JLRColours.BLUE.toString());
 
-        CarConfiguration configuration = configurationService.getById(configId);
-        String actual = configuration.summarize();
+        var configuration = configurationService.getById(configId);
+        var actual = configuration.summarize();
         assertEquals(expected, actual);
     }
 }

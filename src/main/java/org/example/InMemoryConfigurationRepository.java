@@ -5,4 +5,9 @@ public class InMemoryConfigurationRepository implements ConfigurationRepository 
     public void createConfig(CarConfiguration carConfig) {
         throw new UnsupportedOperationException();
     }
+
+    @Override
+    public CarConfiguration getById(String carConfigId) {
+        throw new UnsupportedOperationException();
+    }
 }
