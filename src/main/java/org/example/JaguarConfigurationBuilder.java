@@ -1,13 +1,13 @@
 package org.example;
 
-public class JaguarConfigurator implements CarConfigurator {
+public class JaguarConfigurationBuilder implements CarConfigurationBuilder {
     private CarModel model = null;
 
-    public JaguarConfigurator(CarModel model) {
+    public JaguarConfigurationBuilder(CarModel model) {
         this.model = model;
     }
 
-    public JaguarConfigurator() {
+    public JaguarConfigurationBuilder() {
     }
 
     @Override

@@ -8,7 +8,7 @@ class JaguarConfiguratorTest {
 
     @Test
     void selectXJModel() {
-        CarConfigurator jaguarConfigurator = new JaguarConfigurator();
+        CarConfigurationBuilder jaguarConfigurator = new JaguarConfigurationBuilder();
 
         CarModel actual = jaguarConfigurator.selectModel(String.valueOf(JaguarModelList.XJ));
 
@@ -18,7 +18,7 @@ class JaguarConfiguratorTest {
 
     @Test
     void selectXFModel() {
-        CarConfigurator jaguarConfigurator = new JaguarConfigurator();
+        CarConfigurationBuilder jaguarConfigurator = new JaguarConfigurationBuilder();
 
         CarModel actual = jaguarConfigurator.selectModel(String.valueOf(JaguarModelList.XF));
 
@@ -29,7 +29,7 @@ class JaguarConfiguratorTest {
     @Test
     void summarizeConfigurationForJaguarXJV102LBlack() {
         CarModel model = new JaguarModel(JaguarModelList.XJ, JaguarEngineList.V10_2L, JLRColours.BLACK);
-        CarConfigurator jaguarConfigurator = new JaguarConfigurator(model);
+        CarConfigurationBuilder jaguarConfigurator = new JaguarConfigurationBuilder(model);
 
         String actual = jaguarConfigurator.summarize();
 

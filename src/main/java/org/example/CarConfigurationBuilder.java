@@ -1,8 +1,6 @@
 package org.example;
 
-import java.lang.module.Configuration;
-
-public interface CarConfigurator {
+public interface CarConfigurationBuilder {
     String summarize();
 
     CarModel selectModel(String model);

@@ -8,7 +8,7 @@ class LandRoverConfiguratorTest {
 
     @Test
     void selectSportModel() {
-        CarConfigurator landRoverConfigurator = new LandRoverConfigurator();
+        CarConfigurationBuilder landRoverConfigurator = new LandRoverConfigurator();
 
         CarModel actual = landRoverConfigurator.selectModel(String.valueOf(LandRoverModelList.SPORT));
 
@@ -18,7 +18,7 @@ class LandRoverConfiguratorTest {
 
     @Test
     void selectEvoqueModel() {
-        CarConfigurator landRoverConfigurator = new LandRoverConfigurator();
+        CarConfigurationBuilder landRoverConfigurator = new LandRoverConfigurator();
 
         CarModel actual = landRoverConfigurator.selectModel(String.valueOf(LandRoverModelList.EVOQUE));
 
@@ -29,7 +29,7 @@ class LandRoverConfiguratorTest {
     @Test
     void summarizeConfigurationForLandRoverSportV84LRed() {
         CarModel model = new LandRoverModel(LandRoverModelList.SPORT, LandRoverEngineList.V8_4L, JLRColours.RED);
-        CarConfigurator landRoverConfigurator = new LandRoverConfigurator(model);
+        CarConfigurationBuilder landRoverConfigurator = new LandRoverConfigurator(model);
 
         String actual = landRoverConfigurator.summarize();
 

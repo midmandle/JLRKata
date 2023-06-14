@@ -1,15 +1,24 @@
 package org.example;
 
 public class CarConfigurationService {
-    public CarConfigurator selectConfig(int configId) {
+    private final ConfigurationRepository configurationRepository;
+
+    public CarConfigurationService(ConfigurationRepository configurationRepository) {
+        this.configurationRepository = configurationRepository;
+    }
+
+    public CarConfigurationBuilder selectConfig(String configId) {
         throw new UnsupportedOperationException();
     }
 
-    public int createNewConfig(CarConfigUser user) {
-        throw new UnsupportedOperationException();
+    public String createNewConfig(CarConfigUser user, JLRBrand brand) {
+        var id = "car-config-id";
+        var carConfiguration = new CarConfiguration(id, user, brand);
+        configurationRepository.createConfig(carConfiguration);
+        return id;
     }
 
-    public CarConfiguration getById(int configId) {
+    public CarConfiguration getById(String configId) {
         throw new UnsupportedOperationException();
     }
 }

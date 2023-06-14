@@ -1,6 +1,6 @@
 package org.example;
 
-public class LandRoverConfigurator implements CarConfigurator {
+public class LandRoverConfigurator implements CarConfigurationBuilder {
     private CarModel model = null;
 
     public LandRoverConfigurator(CarModel model) {this.model = model;}
