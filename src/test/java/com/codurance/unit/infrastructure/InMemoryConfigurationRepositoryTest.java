@@ -1,7 +1,7 @@
 package com.codurance.unit.infrastructure;
 
 import com.codurance.CarConfigNotFoundException;
-import com.codurance.CarConfigUser;
+import com.codurance.core.CarConfigUser;
 import com.codurance.CarConfiguration;
 import com.codurance.JLRBrand;
 import com.codurance.infrastructure.InMemoryConfigurationRepository;

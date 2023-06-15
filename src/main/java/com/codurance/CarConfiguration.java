@@ -1,5 +1,7 @@
 package com.codurance;
 
+import com.codurance.core.CarConfigUser;
+
 import java.util.Objects;
 
 public class CarConfiguration {
