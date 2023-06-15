@@ -1,8 +1,8 @@
 package com.codurance.land_rover;
 
 public enum LandRoverEngineList {
-    V6_3L("V6 3.0l"),
-    V8_4L("V8 4.0l");
+    V6_3L("V6 3.0L"),
+    V8_4L("V8 4.0L");
 
     private final String name;
 

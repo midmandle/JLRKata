@@ -48,7 +48,7 @@ public class CarConfiguratorAcceptance {
 
     @Test
     void a_user_makes_a_car_and_summarizes_it() {
-        String expected = "Land Rover Sport V8 4.0l Red";
+        String expected = "Land Rover Sport V8 4.0L Red";
         var carBrand = JLRBrand.LAND_ROVER;
         var carConfigRepository = new InMemoryConfigurationRepository();
         var idGenerator = new UuidIdGenerator();

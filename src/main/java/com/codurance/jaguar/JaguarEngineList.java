@@ -1,8 +1,8 @@
 package com.codurance.jaguar;
 
 public enum JaguarEngineList {
-    V10_2L("V10 2.0l"),
-    V8_4L("V8 4.0l");
+    I4_2L("I4 2.0L"),
+    V8_4L("V8 4.0L");
 
     private final String name;
 
