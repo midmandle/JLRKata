@@ -14,7 +14,7 @@ public class CarConfiguration {
     }
 
     public String summarize() {
-        return "%s".formatted(brand);
+        throw new UnsupportedOperationException();
     }
 
     @Override
