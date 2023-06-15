@@ -1,6 +1,9 @@
 package com.codurance;
 
+import com.codurance.core.CarConfigNotFoundException;
 import com.codurance.core.CarConfigUser;
+import com.codurance.core.CarConfiguration;
+import com.codurance.core.JLRBrand;
 import com.codurance.jaguar.JaguarConfigurationBuilder;
 import com.codurance.land_rover.LandRoverConfigurationBuilder;
 import org.junit.jupiter.api.Test;

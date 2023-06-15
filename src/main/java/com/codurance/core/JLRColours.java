@@ -1,4 +1,4 @@
-package com.codurance;
+package com.codurance.core;
 
 public enum JLRColours {
     RED("Red"), BLUE("Blue"), BLACK("Black");

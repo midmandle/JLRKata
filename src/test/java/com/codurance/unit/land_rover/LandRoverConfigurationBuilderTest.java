@@ -2,7 +2,7 @@ package com.codurance.unit.land_rover;
 
 import com.codurance.CarConfigurationBuilder;
 import com.codurance.CarModel;
-import com.codurance.JLRColours;
+import com.codurance.core.JLRColours;
 import com.codurance.land_rover.LandRoverConfigurationBuilder;
 import com.codurance.land_rover.LandRoverEngineList;
 import com.codurance.land_rover.LandRoverModel;

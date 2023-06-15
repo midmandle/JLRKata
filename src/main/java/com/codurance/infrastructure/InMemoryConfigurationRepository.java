@@ -1,7 +1,7 @@
 package com.codurance.infrastructure;
 
-import com.codurance.CarConfigNotFoundException;
-import com.codurance.CarConfiguration;
+import com.codurance.core.CarConfigNotFoundException;
+import com.codurance.core.CarConfiguration;
 import com.codurance.ConfigurationRepository;
 
 import java.util.HashMap;

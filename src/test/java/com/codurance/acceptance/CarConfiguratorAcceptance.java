@@ -2,6 +2,8 @@ package com.codurance.acceptance;
 
 import com.codurance.*;
 import com.codurance.core.CarConfigUser;
+import com.codurance.core.JLRBrand;
+import com.codurance.core.JLRColours;
 import com.codurance.core.UuidIdGenerator;
 import com.codurance.infrastructure.InMemoryConfigurationRepository;
 import com.codurance.jaguar.JaguarConfigurationBuilder;

@@ -1,9 +1,9 @@
 package com.codurance.unit.infrastructure;
 
-import com.codurance.CarConfigNotFoundException;
+import com.codurance.core.CarConfigNotFoundException;
 import com.codurance.core.CarConfigUser;
-import com.codurance.CarConfiguration;
-import com.codurance.JLRBrand;
+import com.codurance.core.CarConfiguration;
+import com.codurance.core.JLRBrand;
 import com.codurance.infrastructure.InMemoryConfigurationRepository;
 import org.junit.jupiter.api.Test;
 

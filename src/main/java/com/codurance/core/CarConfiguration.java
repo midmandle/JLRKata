@@ -1,6 +1,4 @@
-package com.codurance;
-
-import com.codurance.core.CarConfigUser;
+package com.codurance.core;
 
 import java.util.Objects;
 

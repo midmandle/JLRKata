@@ -1,7 +1,7 @@
 package com.codurance.jaguar;
 
 import com.codurance.CarModel;
-import com.codurance.JLRColours;
+import com.codurance.core.JLRColours;
 
 import java.util.Objects;
 
