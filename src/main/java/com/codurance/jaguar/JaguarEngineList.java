@@ -6,7 +6,7 @@ public enum JaguarEngineList {
 
     private final String name;
 
-    private JaguarEngineList(String s) {
+    JaguarEngineList(String s) {
         name = s;
     }
 

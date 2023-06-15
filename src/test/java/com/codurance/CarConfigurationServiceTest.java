@@ -24,9 +24,9 @@ public class CarConfigurationServiceTest {
     private static final CarConfiguration CAR_CONFIG = new CarConfiguration(CAR_CONFIG_ID, CONFIG_USER, JLRBrand.JAGUAR);
     private static final CarConfiguration CAR_CONFIG_LAND_ROVER = new CarConfiguration(CAR_CONFIG_ID_LANDROVER, CONFIG_USER, JLRBrand.LAND_ROVER);
     @Mock
-    private CarConfigurationBuilder carConfigurationBuilder;
-    @Mock
     ConfigurationRepository configurationRepository;
+    @Mock
+    private CarConfigurationBuilder carConfigurationBuilder;
     @Mock
     private IdGenerator idGenerator;
 
