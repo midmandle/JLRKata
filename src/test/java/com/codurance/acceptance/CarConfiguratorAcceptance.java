@@ -63,7 +63,7 @@ public class CarConfiguratorAcceptance {
         ;
 
         var configuration = configurationService.getById(configId);
-        // we have to save CarModel explicitly
+        //TODO: we have to save CarModel explicitly
         var actual = configuration.summarize();
         assertEquals(expected, actual);
     }
