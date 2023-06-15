@@ -20,11 +20,11 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class CarConfiguratorAcceptance {
     @Test
     void make_a_jaguar() {
-        String expected = "Jaguar XJ V10 2.0l Black";
+        String expected = "Jaguar XJ I4 2.0L Black";
         CarConfigurationBuilder configurator = new JaguarConfigurationBuilder();
 
         configurator.selectModel(String.valueOf(JaguarModelList.XJ))
-                .selectEngine(String.valueOf(JaguarEngineList.V10_2L))
+                .selectEngine(String.valueOf(JaguarEngineList.I4_2L))
                 .selectColour(String.valueOf(JLRColours.BLACK));
 
         String actual = configurator.summarize();
@@ -34,7 +34,7 @@ public class CarConfiguratorAcceptance {
 
     @Test
     void make_a_land_rover() {
-        String expected = "Land Rover Sport V8 4.0l Red";
+        String expected = "Land Rover Sport V8 4.0L Red";
         CarConfigurationBuilder configurator = new LandRoverConfigurationBuilder();
 
         configurator.selectModel(String.valueOf(LandRoverModelList.SPORT))

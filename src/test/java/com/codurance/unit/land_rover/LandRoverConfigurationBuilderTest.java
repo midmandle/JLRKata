@@ -40,7 +40,7 @@ class LandRoverConfigurationBuilderTest {
 
         String actual = landRoverConfigurator.summarize();
 
-        String expected = "Land Rover Sport V8 4.0l Red";
+        String expected = "Land Rover Sport V8 4.0L Red";
         assertEquals(expected, actual);
     }
 }

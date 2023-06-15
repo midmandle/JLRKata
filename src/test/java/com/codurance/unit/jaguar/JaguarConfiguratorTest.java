@@ -34,13 +34,13 @@ class JaguarConfiguratorTest {
     }
 
     @Test
-    void summarizeConfigurationForJaguarXJV102LBlack() {
-        CarModel model = new JaguarModel(JaguarModelList.XJ, JaguarEngineList.V10_2L, JLRColours.BLACK);
+    void summarizeConfigurationForJaguarXJI42LBlack() {
+        CarModel model = new JaguarModel(JaguarModelList.XJ, JaguarEngineList.I4_2L, JLRColours.BLACK);
         CarConfigurationBuilder jaguarConfigurator = new JaguarConfigurationBuilder(model);
 
         String actual = jaguarConfigurator.summarize();
 
-        String expected = "Jaguar XJ V10 2.0l Black";
+        String expected = "Jaguar XJ I4 2.0L Black";
         assertEquals(expected, actual);
     }
 }

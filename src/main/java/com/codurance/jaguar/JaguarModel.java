@@ -34,7 +34,7 @@ public class JaguarModel implements CarModel {
 
     @Override
     public CarModel selectEngine(String engine) {
-        this.engine = JaguarEngineList.V10_2L;
+        this.engine = JaguarEngineList.I4_2L;
         return this;
     }
 

@@ -15,9 +15,9 @@ class JaguarModelTest {
     void selectEngine() {
         JaguarModel jaguarModel = new JaguarModel();
 
-        CarModel actual = jaguarModel.selectEngine(String.valueOf(JaguarEngineList.V10_2L));
+        CarModel actual = jaguarModel.selectEngine(String.valueOf(JaguarEngineList.I4_2L));
 
-        CarModel expected = new JaguarModel(JaguarEngineList.V10_2L);
+        CarModel expected = new JaguarModel(JaguarEngineList.I4_2L);
         assertEquals(expected, actual);
     }
 
@@ -37,7 +37,7 @@ class JaguarModelTest {
 
         String actual = jaguarModel.summarize();
 
-        String expected = "XF V8 4.0l Blue";
+        String expected = "XF V8 4.0L Blue";
         assertEquals(expected, actual);
     }
 }

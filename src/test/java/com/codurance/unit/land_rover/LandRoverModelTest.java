@@ -37,7 +37,7 @@ class LandRoverModelTest {
 
         String actual = landRoverModel.summarize();
 
-        String expected = "Evoque V6 3.0l Blue";
+        String expected = "Evoque V6 3.0L Blue";
         assertEquals(expected, actual);
     }
 }
