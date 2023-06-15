@@ -19,7 +19,23 @@ Bill has just won the lottery and would like to configure his dream car. Bill ca
 - Bill selects the "British Racing Green" colour for his "F-Type"
 - Bill sees the configuration summary "Jaguar F-Type V8 4.0 BRG"
 
-## Optional
+## Technical Rules:
+
+- Throw exception when a car configuration isn't found.
+- You may use the model and engine choices listed below. _(Feel free to come up with your own options)_
+- You may come up with your own colours
+
+
+### Jaguar
+- **Models**: F-Pace, F-Type, XF
+- **Engine choices**: 2.0L I4, V6 3.0L, V8 4.0L
+
+### Land Rover
+- **Models**: Sport, Defender, Evoque
+- **Engine choices**: 2.0L I4 TDI, V6 TDI 3.0L, V8 4.0L
+
+
+## Optional Challenges
 
 - Add more kinds of options. Some examples are:
     - Electric option
