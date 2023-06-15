@@ -1,7 +1,7 @@
 package com.codurance.land_rover;
 
 public enum LandRoverModelList {
-    EVOQUE ("Evoque"), SPORT ("Sport");
+    EVOQUE("Evoque"), SPORT("Sport");
 
     private final String name;
 

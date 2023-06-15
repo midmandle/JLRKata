@@ -49,7 +49,7 @@ public class JaguarModel implements CarModel {
         String modelName = model.name();
         String engineName = engine.toString();
         String vehicleColour = colour.toString();
-        String modelDetails = engineName +" " + vehicleColour;
+        String modelDetails = engineName + " " + vehicleColour;
         return "%s %s".formatted(modelName, modelDetails);
     }
 

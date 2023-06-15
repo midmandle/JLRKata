@@ -2,11 +2,9 @@ package com.codurance.land_rover;
 
 import com.codurance.CarConfigurationBuilder;
 import com.codurance.CarModel;
-import com.codurance.CarEngine;
 
 public class LandRoverConfigurationBuilder implements CarConfigurationBuilder {
     private CarModel model = null;
-    private CarEngine engine = null;
 
     public LandRoverConfigurationBuilder(CarModel model) {
         this.model = model;

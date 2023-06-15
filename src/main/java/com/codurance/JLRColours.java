@@ -1,7 +1,7 @@
 package com.codurance;
 
 public enum JLRColours {
-    RED ("Red"), BLUE ("Blue"), BLACK ("Black");
+    RED("Red"), BLUE("Blue"), BLACK("Black");
 
     private final String name;
 
