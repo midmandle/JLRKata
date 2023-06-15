@@ -24,7 +24,7 @@ public class CarConfiguratorAcceptance {
         var user = new CarConfigUser("bob", "bob@example.com");
         var configId = configurationService.createNewConfig(user, carBrand);
 
-        // TODO: figure out if carmode is trying to be a builder or not?
+        // TODO: figure out if carmodel is trying to be a builder or not?
         var carModel = configurationService.useConfig(configId)
                 .selectModel(LandRoverModelList.SPORT.toString())
                 .selectEngine(LandRoverEngineList.V8_4L.toString())

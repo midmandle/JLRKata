@@ -35,8 +35,4 @@ public class CarConfigurationService {
     public CarConfiguration getById(String configId) {
         return configurationRepository.getById(configId);
     }
-
-    public void saveConfig(String configId, CarConfiguration carConfig) {
-        throw new UnsupportedOperationException();
-    }
 }
