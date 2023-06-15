@@ -1,4 +1,4 @@
-# Build Your Dream Ride
+# Build Your Dream Ride 🚗
 
 Bill has just won the lottery and would like to configure his dream car. Bill can't make his mind up between Jaguar or a Land Rover. Your job is to create a car configurator so that Bill can configure his dream ride.
 
