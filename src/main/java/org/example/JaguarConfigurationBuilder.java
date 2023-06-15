@@ -13,7 +13,7 @@ public class JaguarConfigurationBuilder implements CarConfigurationBuilder {
     @Override
     public CarModel selectModel(String model) {
         this.model = new JaguarModel(JaguarModelList.XJ);
-        if(model.equals(String.valueOf(JaguarModelList.XF))) {
+        if (model.equals(String.valueOf(JaguarModelList.XF))) {
             this.model = new JaguarModel(JaguarModelList.XF);
         }
         return this.model;

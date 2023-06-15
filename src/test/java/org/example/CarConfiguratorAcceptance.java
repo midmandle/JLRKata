@@ -23,7 +23,7 @@ public class CarConfiguratorAcceptance {
     @Test
     void make_a_land_rover() {
         String expected = "Land Rover Sport V8 4.0l Red";
-        CarConfigurationBuilder configurator = new LandRoverConfigurator();
+        CarConfigurationBuilder configurator = new LandRoverConfigurationBuilder();
 
         configurator.selectModel(String.valueOf(LandRoverModelList.SPORT))
                 .selectEngine(String.valueOf(LandRoverEngineList.V8_4L))
@@ -44,12 +44,14 @@ public class CarConfiguratorAcceptance {
         var user = new CarConfigUser("bob", "bob@example.com");
         var configId = configurationService.createNewConfig(user, carBrand);
 
-        configurationService.useConfig(configId)
+        var carModel = configurationService.useConfig(configId)
                 .selectModel(LandRoverModelList.SPORT.toString())
                 .selectEngine(LandRoverEngineList.V8_4L.toString())
-                .selectColour(JLRColours.BLUE.toString());
+                .selectColour(JLRColours.BLUE.toString())
+        ;
 
         var configuration = configurationService.getById(configId);
+        // we have to save CarModel explicitly
         var actual = configuration.summarize();
         assertEquals(expected, actual);
     }

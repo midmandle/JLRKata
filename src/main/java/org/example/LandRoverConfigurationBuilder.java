@@ -1,22 +1,26 @@
 package org.example;
 
-public class LandRoverConfigurator implements CarConfigurationBuilder {
+public class LandRoverConfigurationBuilder implements CarConfigurationBuilder {
     private CarModel model = null;
+    private CarEngine engine = null;
 
-    public LandRoverConfigurator(CarModel model) {this.model = model;}
+    public LandRoverConfigurationBuilder(CarModel model) {
+        this.model = model;
+    }
 
-    public LandRoverConfigurator() {
+    public LandRoverConfigurationBuilder() {
     }
 
     @Override
     public CarModel selectModel(String model) {
         this.model = new LandRoverModel(LandRoverModelList.SPORT);
-        if(model.equals(String.valueOf(LandRoverModelList.EVOQUE))) {
+        if (model.equals(String.valueOf(LandRoverModelList.EVOQUE))) {
             this.model = new LandRoverModel(LandRoverModelList.EVOQUE);
         }
 
         return this.model;
     }
+
     @Override
     public String summarize() {
         String brandName = "Land Rover";

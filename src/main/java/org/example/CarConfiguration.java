@@ -14,7 +14,7 @@ public class CarConfiguration {
     }
 
     public String summarize() {
-        throw new UnsupportedOperationException();
+        return "%s".formatted(brand);
     }
 
     @Override
@@ -28,5 +28,13 @@ public class CarConfiguration {
     @Override
     public int hashCode() {
         return Objects.hash(configId, configUser, brand);
+    }
+
+    public String configId() {
+        return configId;
+    }
+
+    public JLRBrand brand() {
+        return brand;
     }
 }

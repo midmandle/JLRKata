@@ -1,8 +1,10 @@
 package org.example;
 
+import java.util.UUID;
+
 public class UuidIdGenerator implements IdGenerator {
     @Override
     public String nextId() {
-        throw new UnsupportedOperationException();
+        return UUID.randomUUID().toString();
     }
 }

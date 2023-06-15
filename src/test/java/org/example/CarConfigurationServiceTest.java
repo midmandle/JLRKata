@@ -72,5 +72,13 @@ public class CarConfigurationServiceTest {
         var result = carConfigurationService.getById(CAR_CONFIG_ID);
         assertEquals(CAR_CONFIG, result);
     }
+
+    @Test
+    void should_return_configuration_builder_for_land_rover() {
+        when(configurationRepository.getById(CAR_CONFIG_ID_LANDROVER)).thenReturn(CAR_CONFIG_LAND_ROVER);
+        var carConfigurationService = new CarConfigurationService(configurationRepository, idGenerator);
+        var result = carConfigurationService.useConfig(CAR_CONFIG_ID);
+        assertInstanceOf(LandRoverConfigurationBuilder.class, result);
+    }
 }
 

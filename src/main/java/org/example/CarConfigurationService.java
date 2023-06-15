@@ -12,7 +12,11 @@ public class CarConfigurationService {
     public CarConfigurationBuilder useConfig(String configId) {
         var carConfig = configurationRepository.getById(configId);
 
-        return new JaguarConfigurationBuilder();
+        if (carConfig.brand() == JLRBrand.JAGUAR) {
+            return new JaguarConfigurationBuilder();
+        }
+
+        return new LandRoverConfigurationBuilder();
     }
 
     public String createNewConfig(CarConfigUser user, JLRBrand brand) {
@@ -24,5 +28,9 @@ public class CarConfigurationService {
 
     public CarConfiguration getById(String configId) {
         return configurationRepository.getById(configId);
+    }
+
+    public void saveConfig(String configId, CarConfiguration carConfig) {
+        throw new UnsupportedOperationException();
     }
 }
