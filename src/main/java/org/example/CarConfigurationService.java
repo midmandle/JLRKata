@@ -1,11 +1,7 @@
 package org.example;
 
 public class CarConfigurationService {
-    public CarConfigurator selectConfig(int configId) {
-        throw new UnsupportedOperationException();
-    }
-
-    public int createNewConfig(CarConfigUser user) {
+    public int createNewConfig(String user) {
         throw new UnsupportedOperationException();
     }
 
